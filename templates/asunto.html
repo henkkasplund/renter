@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Vuokrailmoitus</title>
+</head>
+
+<body>
+  <form action="/ilmoitus" method="post">
+    <p>Huonemäärä:</p>
+    <p>
+      <input type="radio" name="huoneita" value="1" /> Yksiö
+      <input type="radio" name="huoneita" value="2" /> Kaksio
+      <input type="radio" name="huoneita" value="3" /> Kolmio
+      <input type="radio" name="huoneita" value="4" /> Neljä huonetta
+      <input type="radio" name="huoneita" value="5" /> Viisi huonetta
+      <input type="radio" name="huoneita" value="6" /> Kuusi huonetta
+      <input type="radio" name="huoneita" value="7" /> Seitsemän huonetta
+      <input type="radio" name="huoneita" value=">7" /> Useampi kuin seitsemän huonetta
+    </p>
+    <p>Taloyhtiön palvelut:</p>
+    <p>
+      <input type="checkbox" name="palvelu" value="A" /> Hissi
+      <input type="checkbox" name="palvelu" value="B" /> Autopaikka
+      <input type="checkbox" name="palvelu" value="C" /> Sauna
+      <input type="checkbox" name="palvelu" value="D" /> Uima-allas
+      <input type="checkbox" name="palvelu" value="E" /> Kuntosali
+      <input type="checkbox" name="palvelu" value="F" /> Pesutupa
+      <input type="checkbox" name="palvelu" value="G" /> Häkkikellari
+      <input type="checkbox" name="palvelu" value="H" /> Kylmäkellari
+    </p>
+    <p>Lisätietoa: <br />
+      <textarea name="message" rows="20" cols="50"></textarea>
+    </p>
+    <input type="submit" value="Lähetä" />
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ilmoitus</title>
+</head>
+
+<body>
+  <p>Valitsit huonemääräksi {{ huoneita }}</p>
+  <p>
+    Seuraavat palvelut:
+    <ul>
+      {% for palvelu in palvelus %}
+      <li>{{ palvelu }}</li>
+      {% endfor %}
+    </ul>
+  </p>
+  <p>
+    Lisätiedot: <br />
+    {{ message }}
+  </p>
+</body>
+
+</html>
